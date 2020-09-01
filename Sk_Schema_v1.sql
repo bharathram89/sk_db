@@ -59,8 +59,10 @@ CREATE TABLE `candidate`
  `password`       varchar(45) NOT NULL ,
  `linkdinUrl`     varchar(45) NOT NULL ,
  `image`          varchar(45) NOT NULL ,
+ `totalYearsExperience` varchar(45) NOT NULL ,
  `remote`         tinyint(1) NOT NULL ,
  `educationLevel` varchar(45) NOT NULL ,
+ `verificationCode` varchar(10) NOT NULL ,
  `visaStatus`     varchar(45) NOT NULL ,
 
 PRIMARY KEY (`candidateID`)
@@ -201,6 +203,7 @@ CREATE TABLE `recruiter`
  `linkdinUrl`         varchar(45) NOT NULL ,
  `image`              varchar(45) NOT NULL ,
  `rating`             enum('1','2','3','4') NOT NULL ,
+ `verificationCode` varchar(10) NOT NULL ,
  `executiveRecruiter` tinyint(1) NOT NULL ,
 
 PRIMARY KEY (`recruiterID`)
